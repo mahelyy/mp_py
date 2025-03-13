@@ -9,7 +9,7 @@ if __name__ == '__main__':
 		for _ in range(N):
 			x = random.random()
 			y = random.random()
-			if (x*x + y*y) < 1:
+			if sqrt(x*x + y*y) < 1:
 				inside_circle += 1
 	pi_approx = 4 * inside_circle /N
 	absolute_error = abs(math.pi - pi_approx)
